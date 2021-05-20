@@ -1,6 +1,6 @@
 node {
     stage('SCM-Checkout') {
-	    git branch: 'main', credentialsId: 'git_credentials', url: 'https://github.com/namrata4447/Jenkins-Pipeline.git' 
+	    git branch: 'main', credentialsId: 'git_credentials', url: 'https://github.com/namrata4447/jenkins-pipeline-script.git' 
 	}
     stage('Maven-clean') {
         def mvnHome = tool name: 'maven_home', type: 'maven'
